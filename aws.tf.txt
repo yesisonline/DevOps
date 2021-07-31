@@ -4,14 +4,14 @@ variable "SECRET_KEY" {}
 provider "aws" {  
       profile = "default"  
       region  = "ap-south-1"
-      access_key = "AKIASYV3EXIXV2LAPEUD"
-      secret_key = "Dc5mms24obJO34wMA07l7AjUpq9t1zuaSm+n3T6y"
+      access_key = "youraccesskey"
+      secret_key = "yoursecretkey"
           
 }
 
 resource "aws_key_pair" "sameer" {
        key_name   = "sameer-key"
-       public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8LFleEG/IX5wh18pclxxgQK4Lv92z0Z5ZHH1cNeY9GlPzAws+BlMhW4khFgciyZ/RRuZPJEjOqJuHNx12TQIUaCiqI2arfcdij9EIdFRxXL2PpHju3EZCK/M9jFOnMbiha+Y6PPVtkTMVrQ1xmAo6osHMpPgL1HMzMVFenO23gqNlQeuEGOMaMJXrt/2Vg4YMzbNUAGlXmzC2fIraL1VxubnVw9N/TXS2v82UititGLodjq+firqeXs2FOrVU8hW8y9jvZZsen2jzU8yJrtF825l+2GTltIS0mt4XVRiJjQ4Qm4ivWglZG/rTKq2NguUhwVwqIhbBbE5regS7zYA/ cloudshell-user@ip-10-0-95-77.ap-south-1.compute.internal"
+       public_key = "yourpublickey"
 }
 
 resource "aws_instance" "Frontserver" {  
